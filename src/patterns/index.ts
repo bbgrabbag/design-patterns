@@ -1,1 +1,1 @@
-export { }
+export * from './factory-method/factory-method.pattern';
