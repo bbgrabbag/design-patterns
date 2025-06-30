@@ -1,4 +1,3 @@
-// Prototype Pattern Implementation
 
 abstract class Prototype {
     abstract clone(): Prototype;
