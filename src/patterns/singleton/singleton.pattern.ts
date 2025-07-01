@@ -1,3 +1,4 @@
+
 interface InstanceCreator<T> {
     make(): T;
 }
