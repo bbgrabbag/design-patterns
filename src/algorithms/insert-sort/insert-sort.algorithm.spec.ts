@@ -25,4 +25,17 @@ describe('Insertion Sort Algorithm', () => {
         expect(sorted).toEqual([2, 3, 4, 5, 8]);
         expect(sorted).not.toBe(arr);
     });
+
+    it('should work on empty array', () => {
+        const arr: number[] = [];
+        const sorted = insertionSort(arr);
+        expect(sorted).toEqual([]);
+    });
+
+    it('should work on array with one element', () => {
+        const arr = [1];
+        const sorted = insertionSort(arr);
+        expect(sorted).toEqual([1]);
+    });
+
 });
