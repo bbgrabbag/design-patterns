@@ -1,6 +1,6 @@
 {
     "name": "algopat",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Utility library for implementing common design patterns and algorithms",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",

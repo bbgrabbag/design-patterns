@@ -3,7 +3,7 @@ name: Publish to NPM
 on:
   pull_request:
     branches:
-      - 'main'
+      - main
     paths-ignore:
       - '**.md'
       - '.github/**'
