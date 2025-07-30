@@ -3,7 +3,9 @@ name: Publish to NPM
 on:
   push:
     branches:
-      - main
+      - 'main'
+    branches-ignore:
+      - 'dependabot/**'
     paths-ignore:
       - '**.md'
       - '.github/**'
