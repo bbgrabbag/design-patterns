@@ -224,7 +224,35 @@ npm run clean
 
 ## Publishing
 
-To publish this package to npm:
+### Automated Publishing (Recommended)
+
+This project uses GitHub Actions to automatically publish to npm when changes are pushed to the `main` branch. The workflow will:
+
+1. Run tests and quality checks
+2. Create a git tag based on the version in `package.json`
+3. Publish to npm
+4. Create a GitHub release
+
+#### Setup Required
+
+To enable automated publishing, you need to add the following secrets to your GitHub repository:
+
+1. **NPM_TOKEN**: Your npm authentication token
+   - Go to [npmjs.com](https://www.npmjs.com/) and log in
+   - Go to your profile → Access Tokens
+   - Create a new token with "Automation" type
+   - Add it as a repository secret named `NPM_TOKEN`
+
+#### How It Works
+
+- The workflow triggers on pushes to the `main` branch
+- It skips publishing if the commit message contains `[skip ci]` or `[no publish]`
+- It only publishes if the version hasn't been tagged before
+- The workflow runs all quality checks before publishing
+
+### Manual Publishing
+
+To publish manually:
 
 1. Update the version in `package.json`
 2. Run `npm run build` to ensure the latest code is compiled
