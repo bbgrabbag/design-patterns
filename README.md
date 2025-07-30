@@ -5,18 +5,18 @@ A simple npm package containing common design patterns and algorithms.
 ## Table of Contents
 
 - [Features](#features)
-- [Quick Start with DevContainer](#quick-start-with-devcontainer)
-- [Manual Installation](#manual-installation)
-- [Development](#development)
+- [Installation](#installation)
+- [Documentation](#usage)
+  - [Design Patterns](#design-patterns-1)
+  - [Algorithms](#algorithms)
+- [Usage](#development)
+  - [Quick Start with DevContainer](#quick-start-with-devcontainer)
   - [Install Dependencies](#install-dependencies)
   - [Build the Project](#build-the-project)
   - [Run Tests](#run-tests)
   - [Code Quality](#code-quality)
-- [Documentation](#usage)
-  - [Design Patterns](#design-patterns-1)
-  - [Algorithms](#algorithms)
+  - [Scripts](#scripts)
 - [Publishing](#publishing)
-- [Scripts](#scripts)
 - [License](#license)
 
 ## Features
@@ -25,73 +25,10 @@ A simple npm package containing common design patterns and algorithms.
 - **Algorithms**: Sort, Tree Search, Shortest Path and more
 - **DevContainer**: Ready-to-use development environment
 
-## Quick Start with DevContainer
-
-The easiest way to get started is using the provided devcontainer:
-
-1. Install [Docker](https://www.docker.com/products/docker-desktop/)
-2. Install [VS Code](https://code.visualstudio.com/) with the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-3. Open this project in VS Code
-4. When prompted, click "Reopen in Container"
-5. The container will build and install all dependencies automatically
-
-## Manual Installation
-
-If you prefer to develop locally:
+## Installation
 
 ```bash
-npm install
-```
-
-## Development
-
-### Install Dependencies
-
-```bash
-npm install
-```
-
-### Build the Project
-
-```bash
-npm run build
-```
-
-This will compile TypeScript files to JavaScript in the `dist/` directory.
-
-### Run Tests
-
-```bash
-# Run all tests
-npm test
-
-# Run tests in watch mode
-npm run test:watch
-
-# Run tests with coverage
-npm run test:coverage
-```
-
-### Code Quality
-
-```bash
-# Lint code
-npm run lint
-
-# Fix linting issues
-npm run lint:fix
-
-# Format code
-npm run format
-
-# Check code formatting
-npm run format:check
-```
-
-### Clean Build Output
-
-```bash
-npm run clean
+npm install algopat
 ```
 
 ## Usage
@@ -209,17 +146,68 @@ The **Selection Sort** algorithm sorts an array by repeatedly finding the minimu
 | --------- | ----------------------------------------------------------------------------- | ------------- | ------- |
 | `mutable` | If `true`, sorts the input array in-place. If `false`, returns a sorted copy. | `true`        | `false` |
 
-## Publishing
+## Development
 
-To publish this package to npm:
+### Quick Start with DevContainer
 
-1. Update the version in `package.json`
-2. Run `npm run build` to ensure the latest code is compiled
-3. Run `npm publish`
+The easiest way to get started is using the provided devcontainer:
 
-The `prepublishOnly` script will automatically clean and build the project before publishing.
+1. Install [Docker](https://www.docker.com/products/docker-desktop/)
+2. Install [VS Code](https://code.visualstudio.com/) with the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+3. Open this project in VS Code
+4. When prompted, click "Reopen in Container"
+5. The container will build and install all dependencies automatically
 
-## Scripts
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Build the Project
+
+```bash
+npm run build
+```
+
+This will compile TypeScript files to JavaScript in the `dist/` directory.
+
+### Run Tests
+
+```bash
+# Run all tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with coverage
+npm run test:coverage
+```
+
+### Code Quality
+
+```bash
+# Lint code
+npm run lint
+
+# Fix linting issues
+npm run lint:fix
+
+# Format code
+npm run format
+
+# Check code formatting
+npm run format:check
+```
+
+### Clean Build Output
+
+```bash
+npm run clean
+```
+
+### Scripts
 
 - `npm run build` - Compile TypeScript to JavaScript
 - `npm test` - Run all tests
@@ -231,6 +219,16 @@ The `prepublishOnly` script will automatically clean and build the project befor
 - `npm run format` - Format code with Prettier
 - `npm run format:check` - Check code formatting
 - `npm run prepublishOnly` - Clean and build before publishing
+
+## Publishing
+
+To publish this package to npm:
+
+1. Update the version in `package.json`
+2. Run `npm run build` to ensure the latest code is compiled
+3. Run `npm publish`
+
+The `prepublishOnly` script will automatically clean and build the project before publishing.
 
 ## License
 

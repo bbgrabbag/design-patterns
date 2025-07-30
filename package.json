@@ -1,9 +1,14 @@
 {
-    "name": "@btdev/design-patterns",
+    "name": "algopat",
     "version": "1.0.0",
     "description": "Utility library for implementing common design patterns and algorithms",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
+    "homepage": "https://github.com/bbgrabbag/design-patterns",
+    "repository": {
+        "type": "url",
+        "url": "git+https://github.com/bbgrabbag/design-patterns.git"
+    },
     "scripts": {
         "build": "tsc",
         "test": "jest",
