@@ -1,12 +1,12 @@
 {
     "name": "algopat",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "Utility library for implementing common design patterns and algorithms",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "homepage": "https://github.com/bbgrabbag/design-patterns",
     "repository": {
-        "type": "url",
+        "type": "git",
         "url": "git+https://github.com/bbgrabbag/design-patterns.git"
     },
     "scripts": {
