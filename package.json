@@ -1,7 +1,7 @@
 {
-    "name": "design-patterns",
+    "name": "@btdev/design-patterns",
     "version": "1.0.0",
-    "description": "A simple npm package demonstrating design patterns",
+    "description": "Utility library for implementing common design patterns and algorithms",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
@@ -21,7 +21,7 @@
         "typescript",
         "node"
     ],
-    "author": "Your Name",
+    "author": "Ben Turner",
     "license": "MIT",
     "devDependencies": {
         "@types/jest": "^29.5.8",

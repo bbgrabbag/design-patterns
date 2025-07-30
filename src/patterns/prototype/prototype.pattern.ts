@@ -1,7 +1,7 @@
 
 abstract class Prototype {
     abstract clone(): Prototype;
-    initialize(..._args: any[]): void { /* Optional default implementation */ }
+    abstract initialize(..._args: any[]): void;
 }
 
 abstract class AbstractPrototypeRegistry {
