@@ -1,1 +1,1 @@
-export * from "./insert-sort/insert-sort.algorithm";
+export * from './insert-sort/insert-sort.algorithm';
