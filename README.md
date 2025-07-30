@@ -6,10 +6,10 @@ A simple npm package containing common design patterns and algorithms.
 
 - [Features](#features)
 - [Installation](#installation)
-- [Documentation](#usage)
+- [Usage](#usage)
   - [Design Patterns](#design-patterns-1)
   - [Algorithms](#algorithms)
-- [Usage](#development)
+- [Development](#development)
   - [Quick Start with DevContainer](#quick-start-with-devcontainer)
   - [Install Dependencies](#install-dependencies)
   - [Build the Project](#build-the-project)
@@ -158,7 +158,9 @@ The easiest way to get started is using the provided devcontainer:
 4. When prompted, click "Reopen in Container"
 5. The container will build and install all dependencies automatically
 
-### Install Dependencies
+### Manually Install Dependencies
+
+If you prefer to use a different development environment you can simply install dependencies using `npm`:
 
 ```bash
 npm install
