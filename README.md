@@ -174,6 +174,23 @@ The `Singleton` pattern ensures that a class has only one instance and provides 
 
 ### Algorithms
 
+#### Insert Sort
+
+The **Insertion Sort** algorithm is a simple, intuitive sorting technique that builds the sorted array one item at a time. It works by iterating through the array, taking each element, and inserting it into its correct position relative to the already sorted portion of the array. This algorithm is efficient for small or nearly sorted datasets and is stable (preserves the order of equal elements).
+
+`import { insertionSort } from 'design-patterns'`
+| Argument | Description | Default Value | Example |
+| ------------- | --------------------------------------------------------------------------- | ------------- | -------------------------------------------- |
+| `arr` | The array to sort. | — | `[5, 3, 8, 4, 2]` |
+| `compareFn` | Function to compare two elements. Should return -1, 0, or 1. | `(a, b) => (a < b ? -1 : a > b ? 1 : 0)` | `(a, b) => a.localeCompare(b)` |
+| `options` | Optional settings for sorting. See below for details. | `{ mutable: true }` | `{ mutable: false }` |
+
+**Options**
+
+| Option    | Description                                                                   | Default Value | Example |
+| --------- | ----------------------------------------------------------------------------- | ------------- | ------- |
+| `mutable` | If `true`, sorts the input array in-place. If `false`, returns a sorted copy. | `true`        | `false` |
+
 ## Publishing
 
 To publish this package to npm:
