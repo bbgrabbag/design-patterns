@@ -2,9 +2,27 @@
 
 A simple npm package containing common design patterns and algorithms.
 
+## Table of Contents
+
+- [Features](#features)
+- [Quick Start with DevContainer](#quick-start-with-devcontainer)
+- [Manual Installation](#manual-installation)
+- [Development](#development)
+  - [Install Dependencies](#install-dependencies)
+  - [Build the Project](#build-the-project)
+  - [Run Tests](#run-tests)
+  - [Code Quality](#code-quality)
+- [Documentation](#usage)
+  - [Design Patterns](#design-patterns-1)
+  - [Algorithms](#algorithms)
+- [Publishing](#publishing)
+- [Scripts](#scripts)
+- [License](#license)
+
 ## Features
 
 - **Design Patterns**: Singleton, Factory, Prototype patterns and more
+- **Algorithms**: Sort, Tree Search, Shortest Path and more
 - **DevContainer**: Ready-to-use development environment
 
 ## Quick Start with DevContainer
@@ -155,18 +173,6 @@ The `Singleton` pattern ensures that a class has only one instance and provides 
 | `constructor(factory: InstanceCreator<T>)` | Protected constructor to initialize the singleton instance with a factory. | `class MySingleton extends Singleton<MySingleton> { protected constructor() { super({ make: () => new MySingleton() }); } }` |
 
 ### Algorithms
-
-## DevContainer Features
-
-The devcontainer includes:
-
-- **Node.js 18** with npm and yarn
-- **TypeScript** development tools
-- **Jest** testing framework
-- **ESLint** and **Prettier** for code quality
-- **VS Code extensions** for TypeScript, Jest, and Git
-- **Git** and **GitHub CLI** for version control
-- **Additional development tools**: vim, nano, htop, tree
 
 ## Publishing
 
