@@ -191,6 +191,24 @@ The **Insertion Sort** algorithm is a simple, intuitive sorting technique that b
 | --------- | ----------------------------------------------------------------------------- | ------------- | ------- |
 | `mutable` | If `true`, sorts the input array in-place. If `false`, returns a sorted copy. | `true`        | `false` |
 
+#### Select Sort
+
+The **Selection Sort** algorithm sorts an array by repeatedly finding the minimum (or maximum, with a custom comparator) element from the unsorted part and moving it to the beginning. It is simple to implement and works well for small arrays, but is generally less efficient than more advanced algorithms for large datasets.
+
+`import { selectionSort } from 'design-patterns'`
+
+| Argument    | Description                                                  | Default Value                            | Example              |
+| ----------- | ------------------------------------------------------------ | ---------------------------------------- | -------------------- |
+| `arr`       | The array to sort.                                           | —                                        | `[5, 2, 9, 1, 5, 6]` |
+| `compareFn` | Function to compare two elements. Should return -1, 0, or 1. | `(a, b) => (a < b ? -1 : a > b ? 1 : 0)` | `(a, b) => b - a`    |
+| `options`   | Optional settings for sorting. See below for details.        | `{ mutable: true }`                      | `{ mutable: false }` |
+
+**Options**
+
+| Option    | Description                                                                   | Default Value | Example |
+| --------- | ----------------------------------------------------------------------------- | ------------- | ------- |
+| `mutable` | If `true`, sorts the input array in-place. If `false`, returns a sorted copy. | `true`        | `false` |
+
 ## Publishing
 
 To publish this package to npm:
