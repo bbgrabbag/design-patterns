@@ -1,4 +1,6 @@
-# Design Patterns
+# `algopat`
+
+**Algorithms and Design Patterns**
 
 A simple npm package containing common design patterns and algorithms.
 
@@ -7,8 +9,17 @@ A simple npm package containing common design patterns and algorithms.
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Design Patterns](#design-patterns-1)
+  - [Design Patterns](#design-patterns)
+    - [Adapter](#adapter)
+    - [Factory Method](#factory-method)
+    - [Prototype](#prototype)
+    - [Prototype Registry](#prototype-registry)
+    - [Abstract Prototype Registry](#abstract-prototype-registry)
+    - [Singleton](#singleton)
   - [Algorithms](#algorithms)
+    - [Insert Sort](#insert-sort)
+    - [Selection Sort](#select-sort)
+    - [Merge Sort](#merge-sort)
 - [Development](#development)
   - [Quick Start with DevContainer](#quick-start-with-devcontainer)
   - [Install Dependencies](#install-dependencies)
@@ -128,7 +139,7 @@ The **Insertion Sort** algorithm is a simple, intuitive sorting technique that b
 | --------- | ----------------------------------------------------------------------------- | ------------- | ------- |
 | `mutable` | If `true`, sorts the input array in-place. If `false`, returns a sorted copy. | `true`        | `false` |
 
-#### Select Sort
+#### Selection Sort
 
 The **Selection Sort** algorithm sorts an array by repeatedly finding the minimum (or maximum, with a custom comparator) element from the unsorted part and moving it to the beginning. It is simple to implement and works well for small arrays, but is generally less efficient than more advanced algorithms for large datasets.
 
@@ -145,6 +156,24 @@ The **Selection Sort** algorithm sorts an array by repeatedly finding the minimu
 | Option    | Description                                                                   | Default Value | Example |
 | --------- | ----------------------------------------------------------------------------- | ------------- | ------- |
 | `mutable` | If `true`, sorts the input array in-place. If `false`, returns a sorted copy. | `true`        | `false` |
+
+#### Merge Sort
+
+The **Merge Sort** algorithm is an efficient, stable, divide-and-conquer sorting technique. It recursively splits the array into halves, sorts each half, and then merges the sorted halves back together. Merge Sort guarantees O(n log n) time complexity and is stable (preserves the order of equal elements).
+
+`import { mergeSort } from 'design-patterns'`
+
+| Argument    | Description                                                  | Default Value                            | Example             |
+| ----------- | ------------------------------------------------------------ | ---------------------------------------- | ------------------- |
+| `arr`       | The array to sort.                                           | —                                        | `[5, 3, 8, 4, 2]`   |
+| `compareFn` | Function to compare two elements. Should return -1, 0, or 1. | `(a, b) => (a < b ? -1 : a > b ? 1 : 0)` | `(a, b) => b - a`   |
+| `options`   | Optional settings for sorting. See below for details.        | `{ mutable: false }`                     | `{ mutable: true }` |
+
+**Options**
+
+| Option    | Description                                                                   | Default Value | Example |
+| --------- | ----------------------------------------------------------------------------- | ------------- | ------- |
+| `mutable` | If `true`, sorts the input array in-place. If `false`, returns a sorted copy. | `false`       | `true`  |
 
 ## Development
 
